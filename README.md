@@ -2181,7 +2181,7 @@ private void openMaps(Uri geoLocation) {
 ## Penjelasan & Hasil Program Tugas 3 
 
 ## Demo Tugas 1 
-https://github.com/syifaaurellia/IntentProject/assets/115867244/0343880b-e5cb-408e-87b9-0498ab6f677c
+https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/adbeece7-3d84-4c38-89b5-4c421f6f1033
 
 ## Demo Tugas 2
 https://github.com/syifaaurellia/IntentProject2/assets/115867244/c11c2259-1e5b-4924-b8e1-de1e7e9987c6
