@@ -2182,7 +2182,6 @@ private void openMaps(Uri geoLocation) {
 
 ## Demo Tugas 1 
 https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/95069a47-4ba3-4b11-afb3-99e5e44c43d7
-https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/adbeece7-3d84-4c38-89b5-4c421f6f1033
 
 ## Demo Tugas 2
 https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/adbeece7-3d84-4c38-89b5-4c421f6f1033
