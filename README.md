@@ -74,7 +74,7 @@ Untuk menambahkan file gambar seperti untuk SplashScreen, Background di setiap p
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/birumuda"/>
+    <item android:drawable="@color/purple"/>
     <item>
         <bitmap
             android:src="@drawable/logo"
@@ -97,7 +97,7 @@ Untuk menambahkan file gambar seperti untuk SplashScreen, Background di setiap p
 
 - Selanjutnya kita buat java class nya agar SplashScreen bisa berjalan, lalu pada `SplashScreen.java` kita masukkan code dibawah ini :
 ```
-package com.tgs9;
+package com.projectzulaeha;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -150,7 +150,7 @@ Maka langsung saja kita buka `activity_main.xml`, dan buat code seperti berikut 
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg1"
+        android:background="@drawable/bgungu"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"/>
     <TextView
@@ -178,8 +178,8 @@ Maka langsung saja kita buka `activity_main.xml`, dan buat code seperti berikut 
         android:layout_marginTop="200dp"
         android:layout_marginEnd="100dp"
         android:onClick="btnHelloWorld"
-        android:background="@color/hijaumuda"
-        android:text="Hello World!!!"
+        android:background="@color/cream"
+        android:text="Hello World"
         tools:ignore="UsingOnClickInXml"
         android:scaleType="centerCrop"/>
     <Button
@@ -193,7 +193,7 @@ Maka langsung saja kita buka `activity_main.xml`, dan buat code seperti berikut 
         android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
         android:onClick="btnCount"
-        android:background="@color/cream"
+        android:background="@color/soft"
         android:text="Count"
         tools:ignore="UsingOnClickInXml"
         android:scaleType="centerCrop"/>
@@ -208,7 +208,7 @@ Maka langsung saja kita buka `activity_main.xml`, dan buat code seperti berikut 
         android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
         android:onClick="btnSianida"
-        android:background="@color/birumuda"
+        android:background="@color/abu"
         android:scaleType="centerCrop"
         android:text="Scroll Movie"
         tools:ignore="UsingOnClickInXml" />
@@ -223,7 +223,7 @@ Maka langsung saja kita buka `activity_main.xml`, dan buat code seperti berikut 
         android:layout_marginEnd="100dp"
         android:layout_marginStart="100dp"
         android:onClick="btnTwoActivity"
-        android:background="@color/pink"
+        android:background="@color/hijaumuda"
         android:text="Two Activity"
         tools:ignore="UsingOnClickInXml"
         android:scaleType="centerCrop"/>
@@ -238,7 +238,7 @@ Maka langsung saja kita buka `activity_main.xml`, dan buat code seperti berikut 
         android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
         android:onClick="btnSetAlarm"
-        android:background="@color/purple"
+        android:background="@color/tosca"
         android:text="Set Alarm"
         tools:ignore="UsingOnClickInXml"
         android:scaleType="centerCrop"/>
@@ -246,7 +246,7 @@ Maka langsung saja kita buka `activity_main.xml`, dan buat code seperti berikut 
 ```
 - Setelah itu kita buka `MainActivity.java` untuk menambahkan code intent untuk masing-masing tombol :
 ```
-package com.tgs9;
+package com.projectzulaeha;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -353,8 +353,8 @@ e. Project Set Alarm = MainActivity.java (karena merupakan Implicit Intent, jadi
 > `Strings.xml`
 ```
 <resources>
-    <string name="app_name">TGS9INTENT</string>
-    <string name="Hello_World">Hello World!!</string>
+    <string name="app_name">ProjectZulaeha</string>
+    <string name="Hello_World">Hello World</string>
     <string name="button_main">Send</string>
     <string name="editText_main">Enter Your Message Here</string>
     <string name="text_header">Message Received</string>
@@ -390,12 +390,16 @@ Film dokumenter buatan Netflix ini menyoroti rangkaian persidangan yang saat itu
     <color name="colorPrimary">#3F5185</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="birumuda">#ABCBFA</color>
+    <color name="salem">#F8C6E6</color>
     <color name ="purple">#E3A2ED</color>
-    <color name="hijau">#92A676</color>
     <color name="biru">#8FC2EA</color>
     <color name="hijaumuda">#C2E69C</color>
     <color name="cream">#E6C18A</color>
+    <color name="coklat">#65362c</color>
+    <color name="abu">#B0B0B2</color>
+    <color name="tosca">#70AE98</color>
+    <color name="soft">#AED9EA</color>
+    <color name="pastel">#5E96AE</color>
 </resources>
 ```
 
@@ -422,7 +426,7 @@ Film dokumenter buatan Netflix ini menyoroti rangkaian persidangan yang saat itu
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg3"
+        android:background="@drawable/bgcream"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"/>
     <TextView
@@ -430,8 +434,8 @@ Film dokumenter buatan Netflix ini menyoroti rangkaian persidangan yang saat itu
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Hello World!!"
-        android:textColor="@color/hijau"
+        android:text="Hello World"
+        android:textColor="@color/coklat"
         android:textSize="20pt"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -446,7 +450,7 @@ Film dokumenter buatan Netflix ini menyoroti rangkaian persidangan yang saat itu
 
 > `HelloActivity.java`
 ```
-package com.tgs9;
+package com.projectzulaeha;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 public class HelloActivity extends AppCompatActivity{
@@ -474,7 +478,7 @@ public class HelloActivity extends AppCompatActivity{
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg4"
+        android:background="@drawable/bgbiru"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop" />
     <Button
@@ -484,7 +488,7 @@ public class HelloActivity extends AppCompatActivity{
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/cream"
+        android:background="@color/pastel"
         android:onClick="setLimit"
         android:text="Masukkan Angka Limit"
         android:textColor="@android:color/black"
@@ -500,7 +504,7 @@ public class HelloActivity extends AppCompatActivity{
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
-        android:background="@color/cream"
+        android:background="@color/pastel"
         android:onClick="countUp"
         android:text="Count"
         android:textColor="@android:color/black"
@@ -516,7 +520,7 @@ public class HelloActivity extends AppCompatActivity{
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
-        android:background="@color/cream"
+        android:background="@color/pastel"
         android:onClick="back1"
         android:text="Restart"
         android:textColor="@android:color/black"
@@ -550,7 +554,7 @@ public class HelloActivity extends AppCompatActivity{
 
 > `CountActivity.java`
 ```
-package com.tgs9;
+package com.projectzulaeha;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.graphics.Color;
@@ -678,7 +682,7 @@ public class CountActivity extends AppCompatActivity {
         android:id="@+id/article_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/biru"
+        android:background="@color/abu"
         android:padding="@dimen/padding_regular"
         android:text="@string/article_title"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
@@ -717,7 +721,7 @@ public class CountActivity extends AppCompatActivity {
 
 > `SianidaActivity.java`
 ```
-package com.tgs9;
+package com.projectzulaeha;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 public class SianidaActivity extends AppCompatActivity {
@@ -747,7 +751,7 @@ public class SianidaActivity extends AppCompatActivity {
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg5" />
+        android:src="@drawable/bghijau" />
     <TextView
         android:id="@+id/text_header_reply"
         android:layout_width="wrap_content"
@@ -816,7 +820,7 @@ public class SianidaActivity extends AppCompatActivity {
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg5" />
+        android:src="@drawable/bghijau" />
     <TextView
         android:id="@+id/text_header"
         android:layout_width="wrap_content"
@@ -869,7 +873,7 @@ public class SianidaActivity extends AppCompatActivity {
 
 > `TwoActivity.java`
 ```
-package com.tgs9;
+package com.projectzulaeha;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -916,7 +920,7 @@ public class TwoActivity extends AppCompatActivity {
 
 > `Two2Activity.java`
 ```
-package com.tgs9;
+package com.projectzulaeha;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -960,7 +964,7 @@ public class Two2Activity extends AppCompatActivity {
         android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
         android:onClick="btnSetAlarm"
-        android:background="@color/purple"
+        android:background="@color/tosca"
         android:text="Set Alarm"
         tools:ignore="UsingOnClickInXml"
         android:scaleType="centerCrop"/>
@@ -1022,7 +1026,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
     <RelativeLayout
         android:layout_width="500dp"
         android:layout_height="match_parent"
-        android:background="@drawable/bg6">
+        android:background="@drawable/bgpink">
     </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -1064,7 +1068,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/worldwide" />
+                        app:srcCompat="@drawable/iconhello" />
                     <TextView
                         android:id="@+id/textView0"
                         android:layout_width="match_parent"
@@ -1094,7 +1098,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/mathematics_symbols" />
+                        app:srcCompat="@drawable/iconcount" />
                     <TextView
                         android:id="@+id/textView1"
                         android:layout_width="match_parent"
@@ -1130,7 +1134,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/clapperboard" />
+                        app:srcCompat="@drawable/iconscroll" />
                     <TextView
                         android:id="@+id/textView2"
                         android:layout_width="match_parent"
@@ -1160,7 +1164,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/alarm__1_" />
+                        app:srcCompat="@drawable/iconalarm" />
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
@@ -1196,7 +1200,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/messaging" />
+                        app:srcCompat="@drawable/iconactivity" />
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="match_parent"
@@ -1226,7 +1230,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/gps" />
+                        app:srcCompat="@drawable/iconmaps" />
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
@@ -1245,7 +1249,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
 
 > - Setelah itu kita buka `MainActivity.java` untuk menambahkan code intent untuk masing-masing tombol :
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -1399,7 +1403,7 @@ f. Project Maps = MainActivity.java (karena merupakan Implicit Intent, jadi code
 - `Strings.xml` 
 ```
 <resources>
-    <string name="app_name">cipaapps</string>
+    <string name="app_name">projectzulaeha</string>
     <string name="Hello_World">Hello World!!</string>
     <string name="button_main">Send</string>
     <string name="editText_main">Enter Your Message Here</string>
@@ -1485,7 +1489,7 @@ Film dokumenter buatan Netflix ini menyoroti rangkaian persidangan yang saat itu
 
 > `SplashScreen.java`
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -1519,7 +1523,7 @@ public class SplashScreen extends AppCompatActivity {
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg4"
+        android:background="@drawable/bgcream"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"/>
     <TextView
@@ -1528,7 +1532,7 @@ public class SplashScreen extends AppCompatActivity {
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Hello World!!"
-        android:textColor="@color/hijaumuda"
+        android:textColor="@color/coklat"
         android:textSize="20pt"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -1543,7 +1547,7 @@ public class SplashScreen extends AppCompatActivity {
 
 > `HelloActivity.java`
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 public class HelloActivity extends AppCompatActivity{
@@ -1571,7 +1575,7 @@ public class HelloActivity extends AppCompatActivity{
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/bg5"
+        android:background="@drawable/bgbiru"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop" />
     <Button
@@ -1581,7 +1585,7 @@ public class HelloActivity extends AppCompatActivity{
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:background="@color/hijau"
+        android:background="@color/pastel"
         android:onClick="setLimit"
         android:text="Masukkan Angka Limit"
         android:textColor="@android:color/white"
@@ -1597,7 +1601,7 @@ public class HelloActivity extends AppCompatActivity{
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
-        android:background="@color/hijau"
+        android:background="@color/pastel"
         android:onClick="countUp"
         android:text="Count"
         android:textColor="@android:color/white"
@@ -1613,7 +1617,7 @@ public class HelloActivity extends AppCompatActivity{
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="24dp"
-        android:background="@color/hijau"
+        android:background="@color/pastel"
         android:onClick="back1"
         android:text="Restart"
         android:textColor="@android:color/white"
@@ -1647,7 +1651,7 @@ public class HelloActivity extends AppCompatActivity{
 
 > `CountActivity.java`
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -1777,7 +1781,7 @@ public class CountActivity extends AppCompatActivity {
         android:id="@+id/article_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/biru"
+        android:background="@color/abu"
         android:padding="@dimen/padding_regular"
         android:text="@string/article_title"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
@@ -1816,7 +1820,7 @@ public class CountActivity extends AppCompatActivity {
 
 > `SianidaActivity.java`
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 public class SianidaActivity extends AppCompatActivity {
@@ -1845,7 +1849,7 @@ public class SianidaActivity extends AppCompatActivity {
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg1" />
+        android:src="@drawable/bghijau" />
     <TextView
         android:id="@+id/text_header_reply"
         android:layout_width="wrap_content"
@@ -1914,7 +1918,7 @@ public class SianidaActivity extends AppCompatActivity {
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/bg1" />
+        android:src="@drawable/bghijau" />
     <TextView
         android:id="@+id/text_header"
         android:layout_width="wrap_content"
@@ -1944,7 +1948,7 @@ public class SianidaActivity extends AppCompatActivity {
         android:layout_marginRight="16dp"
         android:text="@string/buttton_second"
         android:onClick="returnReply"
-        android:background="@color/pink"
+        android:background="@color/hijaumuda"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:ignore="UsingOnClickInXml" />
@@ -1967,7 +1971,7 @@ public class SianidaActivity extends AppCompatActivity {
 
 > `TwoActivity.java`
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -2014,7 +2018,7 @@ public class TwoActivity extends AppCompatActivity {
 
 > `Two2Activity.java`
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -2066,7 +2070,7 @@ public class Two2Activity extends AppCompatActivity {
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/alarm__1_" />
+                        app:srcCompat="@drawable/iconalarm" />
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
@@ -2101,7 +2105,7 @@ public class Two2Activity extends AppCompatActivity {
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/gps" />
+                        app:srcCompat="@drawable/iconmaps" />
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
