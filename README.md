@@ -48,7 +48,7 @@ Untuk tampilan Layout Bebas, terima kasih.
 ```
 
 ## Tugas 2
-![tugas p10](https://github.com/syifaaurellia/IntentProject2/assets/115867244/439f806f-6f3d-4712-b9f4-c70c77f8a4e7)
+![tugas p10]https://github.com/zulaeha168/Tugas-pert9/assets/130324650/2af8e29f-a9ca-44be-a69e-da01ca12c86d
 
 
 ## Tugas 3
