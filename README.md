@@ -51,7 +51,7 @@ Untuk tampilan Layout Bebas, terima kasih.
 ![tugas pert10](https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/b96922b9-ceb3-4cf1-b19d-bae5ca09faaa)
 
 ## Tugas 3
-![tugas](https://github.com/syifaaurellia/fragment_test/assets/115867244/fb861b7f-9579-47f3-a830-8cc7d896afbf)
+![tugas pert12](https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/1518b1b2-78fd-487a-9809-6921a5e80afc)
 
 ## Penjelasan & Hasil Program Tugas 1
 1. Launcher Splash Logo
