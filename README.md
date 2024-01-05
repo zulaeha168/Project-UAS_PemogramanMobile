@@ -2184,9 +2184,8 @@ private void openMaps(Uri geoLocation) {
 > Pada tugas 3 saya melakukan perubahan pada nama aplikasi, lalu gambar icon aplikasi dan juga pada splashscreen, untuk cara dan isi code nya sama seperti pada tugas 2 hanya menyesuaikan saja dengan yang baru.
 
 **Fill in All The Code in This Project :**
-
-> 1. ***Gradle Script*** => 'build.gradle.kts (Module :app)'
-'''
+> 1. ***Gradle Script*** => `build.gradle.kts (Module :app)`
+```
 plugins {
     id("com.android.application")
 }
@@ -2228,22 +2227,21 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.fragment:fragment:$fragment_version")
 }
-'''
-- Setelah itu klik Sync now
-  
+```
+- Setelah itu klik `Sync now`
+
 > 2. ***AndroidManifest.xml***
-- Lengkapi code ini pada AndroidManifest.xml yang sudah berisikan dengan code-code di project sebelumnya.
-'''
+- Lengkapi code ini pada `AndroidManifest.xml` yang sudah berisikan dengan code-code di project sebelumnya.
+```
 <activity android:name=".VideoPlayerActivity" />
-'''
+```
 
 > 3. ***Java***
 
-=> Pada 'MainActivity.java' saya melakukan penambahan code, yaitu isi code keseluruhannya adalah :
-
-- 'MainAcitivity.java'
-'''
-package com.projectzulaeha;
+=> Pada `MainActivity.java` saya melakukan penambahan code, yaitu isi code keseluruhannya adalah :
+- `MainAcitivity.java`
+```
+package com.cipaapps;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -2343,14 +2341,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-'''
-> Note : Isi code pada keseluruhan tugas 3 ini tetap sama seperti pada isi code tugas 2 yaitu seperti Java class dan untuk res/layout hanya sedikit merubah design, pada tugas 3 ini saya hanya mencantumkan dan menjelaskan code-code yang ditambahkan untuk Fragment saja.
+```
+> Note : Isi code pada keseluruhan tugas 3 ini tetap sama seperti pada isi code tugas 2 yaitu seperti *Java class* dan untuk *res/layout* hanya sedikit merubah design, pada tugas 3 ini saya hanya mencantumkan dan menjelaskan code-code yang ditambahkan untuk `Fragment` saja.
+
 
 - Untuk package name bisa di sesuaikan dengan package name project kita masing-masing, disini saya melanjutkan dari package name project sebelumnya.
-  
-=> 'FragmentActivity.java'
-'''
-package com.projectzulaeha;
+
+=> `FragmentActivity.java`
+```
+package com.cipaapps;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -2442,14 +2441,12 @@ public class FragmentActivity extends AppCompatActivity {
 
     }
 }
-'''
+```
+=> Membuat file fragment dengan cara klik kanan pada `MainActivity.java` lalu pilih dan klik fragment, setelah itu kita pilih dan klik fragment (Blank), setelah itu kita beri nama `ActionFragment`, `ComedyFragment`, `RomanceFragment`. Untuk file fragment sudah sekaligus dengan file layout xml nya (code berada pada bagian res `layout`)
 
-=> Membuat file fragment dengan cara klik kanan pada 'MainActivity.java' lalu pilih dan klik fragment, setelah itu kita pilih dan klik fragment (Blank), setelah itu kita beri nama 'ActionFragment' , 'ComedyFragment', 'RomanceFragment'. Untuk file fragment sudah sekaligus dengan file layout xml nya (code berada pada bagian res 'layout')
-
-- 'ActionFragment.java' :
-  
-'''
-package com.projectzulaeha;
+- `ActionFragment.java` :
+```
+package com.cipaapps;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -2531,12 +2528,10 @@ public class ActionFragment extends Fragment {
         startActivity(intent);
     }
 }
-'''
-
-- 'HororFragment.java' :
-  
-'''
-package com.projectzulaeha;
+```
+- `ComedyFragment.java` :
+```
+package com.cipaapps;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -2555,19 +2550,19 @@ import androidx.fragment.app.Fragment;
 
 public class ComedyFragment extends Fragment {
 
-    private static final String TAG = "HororFragment";
+    private static final String TAG = "ComedyFragment";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         setHasOptionsMenu(true);
-        View view = inflater.inflate(R.layout.fragment_horor, container, false);
+        View view = inflater.inflate(R.layout.fragment_comedy, container, false);
 
         // Find the button by its ID
-        Button waktumaghribButton = view.findViewById(R.id.waktumaghrib);
-        Button pengabdiButton = view.findViewById(R.id.pengabdi);
-        Button sewudinoButton = view.findViewById(R.id.sewudino);
+        Button cektokosebelahButton = view.findViewById(R.id.cektokosebelah);
+        Button friendzoneButton = view.findViewById(R.id.friendzone);
+        Button hospitalplaylistButton = view.findViewById(R.id.hospitalplaylist);
 
         // Set click listener for each button
         cektokosebelahButton.setOnClickListener(new View.OnClickListener() {
@@ -2618,7 +2613,10 @@ public class ComedyFragment extends Fragment {
         startActivity(intent);
     }
 }
-RomanceFragment.java :
+```
+
+- `RomanceFragment.java` :
+```
 package com.cipaapps;
 
 import android.content.Intent;
@@ -2703,8 +2701,10 @@ public class RomanceFragment extends Fragment {
         startActivity(intent);
     }
 }
-=> Lalu buat java class dengan nama ViewAdapter.java, yang berisi code :
+```
 
+=> Lalu buat java class dengan nama `ViewAdapter.java`, yang berisi code :
+```
 package com.cipaapps;
 
 import androidx.annotation.NonNull;
@@ -2737,8 +2737,10 @@ public class ViewAdapter extends FragmentStateAdapter {
         return 3;
     }
 }
-=> Setelah itu membuat java class untuk memutar video dengan nama VideoPlayerActivity.java, yang berisi code :
+```
 
+=> Setelah itu membuat java class untuk memutar video dengan nama `VideoPlayerActivity.java`, yang berisi code :
+```
 package com.cipaapps;
 
 import android.content.pm.ActivityInfo;
@@ -2868,9 +2870,13 @@ public class VideoPlayerActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-res
-=> Pada bagian Drawable saya menambahkan Drawable Resource File dengan nama bg_cardview.xml, yang berisikan code :
+```
 
+
+> 4. ***res***
+
+=> Pada bagian `Drawable` saya menambahkan *Drawable Resource File* dengan nama `bg_cardview.xml`, yang berisikan code :
+```
 <!-- cardview_pressed_effect.xml -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true">
@@ -2888,9 +2894,12 @@ res
         </shape>
     </item>
 </selector>
-=> values
+```
 
-colors.xml :
+=> `values`
+
+- `colors.xml` :
+```
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
@@ -2914,16 +2923,20 @@ colors.xml :
     <color name="coklat">#574545</color>
     <color name="choco">#A69E9E</color>
 </resources>
-=> strings.xml (tambahkan code strings.xml dibawah ini dengan code strings.xml pada project sebelumnya yaitu tugas 2) :
+```
 
+=> `strings.xml` (tambahkan code strings.xml dibawah ini dengan code strings.xml pada project sebelumnya yaitu tugas 2) :
+```
 <resources>
  <string name="app_name">SerendipityApps</string>
     <!-- TODO: Remove or change this placeholder text -->
 <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
-=> themes
+```
+=> `themes`
 
-themes.xml dan themes.xml(night) (sama isi code nya) :
+- `themes.xml` dan `themes.xml(night)` (sama isi code nya) :
+```
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="SplashScreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -2949,13 +2962,15 @@ themes.xml dan themes.xml(night) (sama isi code nya) :
 
     <style name="Theme.TabExperiment" parent="Base.Theme.TabExperiment" />
 </resources>
-=> Untuk menambahkan video pada Android Studio disini saya memakai res/raw/video_kita.mp4, yaitu caranya yang pertama kita klik kanan terlebih dahulu di bagian res lalu kita pilih dan klik new lalu pilih dan klik bagian Android Resource Directory, setelah itu ada bagian Resource type kita pilih raw lalu kita klik OK. Lalu setelah itu langsung saja kita copy paste video yang kita ingin masukkan ke dalam project kita ke dalam raw.
+```
 
-=> layout
+=> Untuk menambahkan video pada Android Studio disini saya memakai `res/raw/video_kita.mp4`, yaitu caranya yang pertama kita klik kanan terlebih dahulu di bagian `res` lalu kita pilih dan klik `new` lalu pilih dan klik bagian `Android Resource Directory`, setelah itu ada bagian    `Resource type` kita pilih `raw` lalu kita klik OK. Lalu setelah itu langsung saja kita copy paste video yang kita ingin masukkan ke dalam project kita ke dalam `raw`.
 
-=> Pada activity_main.xml saya melakukan penambahan dan perubahan code untuk design nya, yaitu isi code keseluruhannya adalah :
+=> `layout`
 
-activity_main.xml :
+=> Pada `activity_main.xml` saya melakukan penambahan dan perubahan code untuk design nya, yaitu isi code keseluruhannya adalah :
+- `activity_main.xml` :
+```
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -3381,7 +3396,10 @@ activity_main.xml :
     </RelativeLayout>
 
 </ScrollView>
-activity_movie.xml :
+```
+
+- `activity_movie.xml` :
+```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -3431,7 +3449,10 @@ activity_movie.xml :
         tools:layout_editor_absoluteY="52dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-activity_video_player.xml :
+```
+
+- `activity_video_player.xml` :
+```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -3442,7 +3463,10 @@ activity_video_player.xml :
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </RelativeLayout>
-fragment_action.xml :
+```
+
+- `fragment_action.xml` :
+```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -3575,7 +3599,10 @@ fragment_action.xml :
         android:text="Watch Trailer Now"
         android:onClick="playSpidermanTrailer" />
 </RelativeLayout>
-fragment_comedy.xml
+```
+
+- `fragment_comedy.xml`
+```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -3706,7 +3733,10 @@ fragment_comedy.xml
         android:text="Watch Trailer Now"
         android:onClick="playHospitalPlaylistTrailer"/>
 </RelativeLayout>
-fragment_romance.xml
+```
+
+- `fragment_romance.xml`
+```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -3842,10 +3872,11 @@ Set in 1999 and 2019, it takes the audience on Bo-ra's emotional journey full of
         android:text="Watch Trailer Now"
         android:onClick="playHiddenloveTrailer"/>
 </RelativeLayout>
-=> Pada directory drawable kita bisa tambahkan gambar seperti poster film yang ingin kita tampilkan, dan jangan lupa untuk menambahkan icon baseline_more_vert_24.xml dengan cara klik kanan pada drawable lalu klik New, setelah itu kita pilih dan klik Vector Asset. Setelah itu kita klik clip art lalu kita pilih icon nya, jika sudah ketemu kita klik OK lalu kita klik next. Sama halnya ketika kita ingin menambahkan menu kembali pada halaman VideoPlayerActivity yaitu dengan langkah-langkah yang sama seperti sebelumnya dan jangan lupa untuk menambahkan icon baseline_arrorw_circle_left_24.xml lalu klik OK dan kita klik next.
+```
+=> Pada directory `drawable` kita bisa tambahkan gambar seperti poster film yang ingin kita tampilkan, dan jangan lupa untuk menambahkan icon `baseline_more_vert_24.xml` dengan cara klik kanan pada `drawable` lalu klik New, setelah itu kita pilih dan klik Vector Asset. Setelah itu kita klik clip art lalu kita pilih icon nya, jika sudah ketemu kita klik OK lalu kita klik next. Sama halnya ketika kita ingin menambahkan menu kembali pada halaman `VideoPlayerActivity` yaitu dengan langkah-langkah yang sama seperti sebelumnya dan jangan lupa untuk menambahkan icon `baseline_arrorw_circle_left_24.xml` lalu klik OK dan kita klik next.
 
-=> Selanjutnya kita klik kanan pada res lalu pilih dan klik Android Resource Directory setelah itu kita beri nama "menu" lalu klik OK. Setelah itu kita buat Menu Resource File dengan nama menu_tab.xml lalu isi dengan code :
-
+=> Selanjutnya kita klik kanan pada `res` lalu pilih dan klik `Android Resource Directory` setelah itu kita beri nama "menu" lalu klik OK. Setelah itu kita buat Menu Resource File dengan nama `menu_tab.xml` lalu isi dengan code :
+```
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -3865,8 +3896,10 @@ Set in 1999 and 2019, it takes the audience on Bo-ra's emotional journey full of
         android:icon="@drawable/baseline_more_vert_24"
         android:title="Romance"/>
 </menu>
-=> Sama halnya ketika ingin menambahkan code menu untuk kembali, dengan cara kita klik kanan pada directory menu dan buat Menu Resource File dengan nama menu_video_player.xml lalu isi dengan code :
+```
 
+=> Sama halnya ketika ingin menambahkan code menu untuk kembali, dengan cara kita klik kanan pada directory `menu` dan buat Menu Resource File dengan nama `menu_video_player.xml` lalu isi dengan code :
+```
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -3876,7 +3909,10 @@ Set in 1999 and 2019, it takes the audience on Bo-ra's emotional journey full of
         android:title="Back"
         app:showAsAction="always" />
 </menu>
-Hasil Program Tugas 3 :
+```
+
+> **Hasil Program Tugas 3 :**
+
 
 
 ## Demo Tugas 1 
