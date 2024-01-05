@@ -2181,6 +2181,159 @@ private void openMaps(Uri geoLocation) {
 
 
 ## Penjelasan & Hasil Program Tugas 3 
+            }
+        });
+
+        return view;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.menu_tab, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.tab_comedy) {
+            Toast.makeText(getActivity(), "Clicked on " + item.getTitle(), Toast.LENGTH_SHORT)
+                    .show();
+        }
+        return true;
+    }
+
+    private void playVideo(int videoResource) {
+        String videoPath = "android.resource://" + getActivity().getPackageName() + "/" + videoResource;
+        Intent intent = new Intent(getActivity(), VideoPlayerActivity.class);
+        intent.putExtra("VIDEO_PATH", videoPath);
+        startActivity(intent);
+    }
+}
+```
+
+- `RomanceFragment.java` :
+```
+package com.cipaapps;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
+
+import com.cipaapps.VideoPlayerActivity;
+
+
+public class RomanceFragment extends Fragment {
+
+    private static final String TAG = "RomanceFragment";
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        setHasOptionsMenu(true);
+        View view = inflater.inflate(R.layout.fragment_romance, container, false);
+
+        // Find the button by its ID
+        Button centurygirlButton = view.findViewById(R.id.centurygirl);
+        Button cheerupButton = view.findViewById(R.id.cheerup);
+        Button hiddenloveButton = view.findViewById(R.id.hiddenlove);
+
+        // Set click listener for each button
+        centurygirlButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "Centurygirl button clicked");
+                playVideo(R.raw.centurygirl);
+            }
+        });
+
+        cheerupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "Cheerup button clicked");
+                playVideo(R.raw.cheerup);
+            }
+        });
+
+        hiddenloveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "Hiddenlove button clicked");
+                playVideo(R.raw.hiddenlove);
+            }
+        });
+
+        return view;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.menu_tab, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.tab_romance) {
+            Toast.makeText(getActivity(), "Clicked on " + item.getTitle(), Toast.LENGTH_SHORT)
+                    .show();
+        }
+        return true;
+    }
+
+    private void playVideo(int videoResource) {
+        String videoPath = "android.resource://" + getActivity().getPackageName() + "/" + videoResource;
+        Intent intent = new Intent(getActivity(), VideoPlayerActivity.class);
+        intent.putExtra("VIDEO_PATH", videoPath);
+        startActivity(intent);
+    }
+}
+```
+
+=> Lalu buat java class dengan nama `ViewAdapter.java`, yang berisi code :
+```
+package com.cipaapps;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+public class ViewAdapter extends FragmentStateAdapter {
+    public ViewAdapter(@NonNull FragmentActivity fragmentActivity) {
+        super(fragmentActivity);
+    }
+
+    @NonNull
+    @Override
+    public Fragment createFragment(int position) {
+        switch (position){
+            case 0:
+                return new ActionFragment();
+            case 1:
+                return new ComedyFragment();
+            case 2:
+                return new RomanceFragment();
+            default:
+                return new ActionFragment();
+        }
+    }
+
+    @Override
+    public int getItemCount() {
+        return 3;
+    }
+}
+```
+
 
 ## Demo Tugas 1 
 https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/95069a47-4ba3-4b11-afb3-99e5e44c43d7
