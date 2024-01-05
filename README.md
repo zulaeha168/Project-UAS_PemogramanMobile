@@ -27,11 +27,11 @@ Dosen   : Donny Maulana, S.Kom., M.M.S.I.
 
 - **[Penjelasan & Hasil Program Tugas 3](#penjelasan--hasil-program-tugas-3)**
 
-- **[Demo Tugas 1](#demo-program-tugas-1)**
+- **[HasilRun Tugas 1](#hasilrun-program-tugas-1)**
 
-- **[Demo Tugas 2](#demo-program-tugas-2)**
+- **[HasilRun Tugas 2](#hasilrun-program-tugas-2)**
 
-- **[Demo Tugas 3](#demo-program-tugas-3)**
+- **[HasilRun Tugas 3](#hasilrun-program-tugas-3)**
 
 
 ## Tugas 1 
@@ -2176,6 +2176,7 @@ private void openMaps(Uri geoLocation) {
 ```
 
 > **Hasil Program Tugas 2 :**
+
 ![menupert10](https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/7ef23ea3-9101-4943-9d85-480d49edf367)
 
 
@@ -3867,12 +3868,12 @@ Film dokumenter buatan Netflix ini menyoroti rangkaian persidangan yang saat itu
 
 
 
-## Hasil Run Tugas 1 
+## HasilRun Tugas 1 
 https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/95069a47-4ba3-4b11-afb3-99e5e44c43d7
 
-## Hasil Run Tugas 2
+## HasilRun Tugas 2
 https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/adbeece7-3d84-4c38-89b5-4c421f6f1033
 
-## Hasil Run Tugas 3
+## HasilRun Tugas 3
 https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/ddfdb565-8b42-4d35-b906-c6815c629cc5
 
