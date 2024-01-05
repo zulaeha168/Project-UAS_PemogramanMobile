@@ -13,6 +13,8 @@ Dosen   : Donny Maulana, S.Kom., M.M.S.I.
 
 
 # **Daftar Isi**
+***Harap klik satu persatu agar update penjelasan dan hasil program terlihat berurutan***
+
 - **[Tugas 1](#tugas-1)**
 
 - **[Tugas 2](#tugas-2)**
