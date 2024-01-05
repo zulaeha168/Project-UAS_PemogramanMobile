@@ -27,11 +27,11 @@ Dosen   : Donny Maulana, S.Kom., M.M.S.I.
 
 - **[Penjelasan & Hasil Program Tugas 3](#penjelasan--hasil-program-tugas-3)**
 
-- **[HasilRun Tugas 1](#hasilrun-program-tugas-1)**
+- **[HasilRun Tugas 1](#HasilRun-program-tugas-1)**
 
-- **[HasilRun Tugas 2](#hasilrun-program-tugas-2)**
+- **[HasilRun Tugas 2](#HasilRun-program-tugas-2)**
 
-- **[HasilRun Tugas 3](#hasilrun-program-tugas-3)**
+- **[HasilRun Tugas 3](#HasilRun-program-tugas-3)**
 
 
 ## Tugas 1 
