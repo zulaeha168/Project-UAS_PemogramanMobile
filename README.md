@@ -3882,3 +3882,5 @@ https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/adbeece7-3d84-4c38
 ## HasilRun Tugas 3
 https://github.com/zulaeha168/ProjectUAS_PM1/assets/130324650/ddfdb565-8b42-4d35-b906-c6815c629cc5
 
+## Sekian, Terimakasih.
+
