@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="25dp">
+
+    <ImageView
+        android:id="@+id/imgMovie"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:src="@drawable/filmhoror"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="WAKTU MAGHRIB"/>
+
+    <TextView
+        android:id="@+id/Deskription"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_below="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="5"
+        android:textColor="@color/black"
+        android:text="This film raises a myth that is believed by the majority of Indonesian people, namely about the sacred time of Maghrib. If you are still outside the house, children will be kidnapped by ghosts. "
+        />
+
+    <Button
+        android:id="@+id/waktumaghrib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_below="@id/Deskription"
+        android:text="Watch Trailer Now"
+        android:onClick="playWaktuMaghribTrailer"/>
+
+    <ImageView
+        android:id="@+id/imgMovie2"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/horor2"/>
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="PENGABDI SETAN "/>
+
+    <TextView
+        android:id="@+id/Deskription2"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_below="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="210dp"
+        android:maxLines="5"
+        android:textColor="@color/black"
+        android:text="The lives of Rini, her sister and father did not run normally while in the apartment because the mother still had a pact with Satan which disrupted their family life." />
+    <Button
+        android:id="@+id/pengabdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_below="@id/Deskription2"
+        android:text="Watch Trailer Now"
+        android:onClick="playPengabdiTrailer"/>
+
+    <ImageView
+        android:id="@+id/imgMovie3"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="400dp"
+        android:src="@drawable/horor5"/>
+
+    <TextView
+        android:id="@+id/tvTitle3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="400dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="SEWU DINO"/>
+
+    <TextView
+        android:id="@+id/Deskription3"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_below="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="410dp"
+        android:maxLines="5"
+        android:textColor="@color/black"
+        android:text="The film Sewu Dino tells the story of a village girl named Sri who is looking for work and needs a lot of money to take care of her sick father."/>
+
+    <Button
+        android:id="@+id/sewudino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/imgMovie"
+        android:layout_below="@id/Deskription3"
+        android:text="Watch Trailer Now"
+        android:onClick="playSewuTrailer"/>
+</RelativeLayout>
